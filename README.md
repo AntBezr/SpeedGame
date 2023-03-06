@@ -22,7 +22,8 @@ Built with:
 Live page [here](https://public.bc.fi/s2300093/speedGame/)
 
 ## Screenshot
-(/screenshot.png)
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+(/screenshot.png?raw=true)
 ## Sources 
 
 - [Some JS solutions](https://github.com/margittennosaar/REACT23K_JS)
