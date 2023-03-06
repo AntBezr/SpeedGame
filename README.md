@@ -5,10 +5,10 @@ The game compleated in Hrry Pother quiddich game theam.
 The point of the game is to click on the appearing Snithches and to get as many points as you can. 
 But be careful, every new snitch appears faster than previos one.
 
-Known issues:
+Known issues to be solved:
 -No sound
 -double clicking on the buttons 
-
+-no mobile version
 ## Technologies used
 
 Built with: 
@@ -16,6 +16,7 @@ Built with:
 - HTML
 - JS
 - CSS
+- ESLint
 
 ## Setup and usage
 
