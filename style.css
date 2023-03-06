@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################## MAIN SETTINGS ##################*/
+body {
+    font-family: 'Yatra One';
+    font-size: larger;
+    background: black url(./quidditchBG.jpg) no-repeat center center/cover;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font: inherit;
+    font-size: 2rem;
+    background-color: brown;
+}
+
+.hidden {
+    display: none
+}
+
+h1 {
+    margin: 5rem 0 3rem;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* ################## Circles SETTINGS ##################*/
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.ScoreBox {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border-width: 10px;
+    margin: 30px;
+    border: 4px solid;
+    border-color: red rgb(155, 10, 10) rgb(155, 10, 10) red;
+    pointer-events: none;
+}
+
+.circle.activeCircle {
+    background: url(./trace.svg) no-repeat center center/contain;
+}
+
+.circle:active {
+    border-color: rgb(155, 10, 10)red red rgb(155, 10, 10);
+}
+
+/* ################## overlay modal  ##################*/
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal {
+    background: white url(./modalBG.jpg)no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal h2 {
+    margin: 0.5rem 0 2rem;
+}
+
+.modal h4 {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.closeBtn {
+    position: absolute;
+    bottom: 1rem;
+}
